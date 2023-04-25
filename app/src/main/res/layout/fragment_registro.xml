@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.RegistroFragment">
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="301dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/valetfullname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="301dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="14"
+        app:helperText="Enter username"
+        app:helperTextEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFullName"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/rgGender"
+        android:layout_width="300dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <RadioButton
+            android:id="@+id/rbtMale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valrbtmale" />
+
+        <RadioButton
+            android:id="@+id/rbtFemale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valrbtfemale" />
+
+        <RadioButton
+            android:id="@+id/rbtUnspecified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valrbtnunspecified" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spnCountry"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+
+    <CheckBox
+        android:id="@+id/chkLicense"
+        android:layout_width="141dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/valchklicense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spnCountry" />
+
+    <CheckBox
+        android:id="@+id/chkCar"
+        android:layout_width="112dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/valchkcar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toEndOf="@+id/chkLicense"
+        app:layout_constraintTop_toBottomOf="@+id/spnCountry" />
+</androidx.constraintlayout.widget.ConstraintLayout>
