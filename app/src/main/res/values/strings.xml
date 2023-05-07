@@ -15,4 +15,16 @@
     <string name="valrbtnunspecified">Others</string>
     <string name="valchklicense">Driver license</string>
     <string name="valchkcar">Have car?</string>
+    <string name="valbtnsave">SAVE</string>
+
+    <string-array name="country_array">
+        <item>Brasil</item>
+        <item>Argentina</item>
+        <item>Uruguay</item>
+        <item>Ecuador</item>
+        <item>Perú</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Venezuela</item>
+    </string-array>
 </resources>
